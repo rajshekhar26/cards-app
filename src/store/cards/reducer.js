@@ -13,6 +13,9 @@ const cardsReducer = (state = initialState, { type, payload }) => {
 
       return { ...state, cards: newCards };
 
+    case types.ADD_CARD:
+      return { ...state, cards: [...state.cards, payload] };
+
     default:
       return state;
   }
