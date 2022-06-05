@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 import styles from "./App.module.css";
+import { Typography } from "@mui/material";
 
 const App = () => {
   const { cards } = useSelector(({ cards }) => cards);
@@ -17,9 +18,16 @@ const App = () => {
       </header>
 
       <div className={styles.cardContainer}>
-        {cards.map((card) => (
-          <ProjectCard key={card.id} card={card} />
-        ))}
+        {!cards.length ? (
+          <Typography
+            align={"center"}
+            sx={{ width: "100%", fontSize: "1.5rem" }}
+          >
+            No cards available
+          </Typography>
+        ) : (
+          cards.map((card) => <ProjectCard key={card.id} card={card} />)
+        )}
       </div>
     </div>
   );

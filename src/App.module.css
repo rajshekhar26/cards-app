@@ -8,9 +8,10 @@
 }
 
 .cardContainer {
-  margin-top: 1em;
+  margin: 1em 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 2em 0;
 }

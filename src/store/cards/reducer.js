@@ -3,7 +3,6 @@ import cards from "../../cardData";
 
 const initialState = {
   cards: cards,
-  status: "idle",
 };
 
 const cardsReducer = (state = initialState, { type, payload }) => {
@@ -15,6 +14,13 @@ const cardsReducer = (state = initialState, { type, payload }) => {
 
     case types.ADD_CARD:
       return { ...state, cards: [...state.cards, payload] };
+
+    case types.EDIT_CARD:
+      const changedCards = cards.map((card) =>
+        card.id === payload.id ? payload : card
+      );
+
+      return { ...state, cards: changedCards };
 
     default:
       return state;

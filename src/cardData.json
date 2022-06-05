@@ -3,24 +3,24 @@
     "id": "1",
     "cardName": "Project 01",
     "projectBudget": 5000,
-    "projectEndDate": "2022-06-02T17:12:16.251Z"
+    "projectEndDate": "2022-08-02T17:12"
   },
   {
     "id": "2",
     "cardName": "Project 02",
     "projectBudget": 4000,
-    "projectEndDate": "2022-06-02T17:12:16.251Z"
+    "projectEndDate": "2022-08-02T17:12"
   },
   {
     "id": "3",
     "cardName": "Project 03",
     "projectBudget": 1000,
-    "projectEndDate": "2022-06-02T17:12:16.251Z"
+    "projectEndDate": "2022-08-02T17:12"
   },
   {
     "id": "4",
     "cardName": "Project 04",
     "projectBudget": 8000,
-    "projectEndDate": "2022-06-02T17:12:16.251Z"
+    "projectEndDate": "2022-08-02T17:12"
   }
 ]
