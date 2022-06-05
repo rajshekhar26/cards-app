@@ -77,7 +77,12 @@ const CardTextFields = ({ card, editCard, onChange, onKeyDown }) => {
             id="projectEndDate-input"
             type="datetime-local"
             label="Closing"
-            sx={{ width: "11em" }}
+            sx={{
+              width: "11em",
+              "& .MuiInputBase-input.Mui-disabled": {
+                WebkitTextFillColor: "#000",
+              },
+            }}
             disabled={!editCard}
             InputLabelProps={{
               shrink: true,
