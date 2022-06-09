@@ -16,7 +16,7 @@ const cardsReducer = (state = initialState, { type, payload }) => {
       return { ...state, cards: [...state.cards, payload] };
 
     case types.EDIT_CARD:
-      const changedCards = cards.map((card) =>
+      const changedCards = state.cards.map((card) =>
         card.id === payload.id ? payload : card
       );
 
